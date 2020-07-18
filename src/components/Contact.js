@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ContactStyled= styled.div`
   color: #FFFAFA;
   i{
-    font-size: 66px;
+    font-size: 33px;
   }
 `
 
