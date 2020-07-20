@@ -5,6 +5,7 @@ const HeroStyled = styled.div`
   .title{
       margin: 0;
       color:#FFFAFA;
+      font-weight: bold;
     }
     img{
       color: white;
