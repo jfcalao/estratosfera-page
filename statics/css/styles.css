@@ -1,69 +1,84 @@
-body{
+body {
   text-align: center;
   margin: 0;
   background: #1A1A1A;
   font-family: 'Mulish', sans-serif;
   font-weight: normal;
 }
-h2{
+
+h2 {
   margin: 0;
 }
-p{
+
+p {
   margin: 0;
 }
-.menu{
+
+.menu {
   text-align: left;
 }
 
-.hero-title{
+.hero-title {
   margin: 0;
-  color:#FFFAFA;
+  color: #FFFAFA;
   font-weight: bold;
 }
-.hero img{
+
+.hero img {
   color: white;
 }
-.hero p{
-color:#897A7A;
+
+.hero p {
+  color: #897A7A;
 }
 
-
-.whatsapp{
+.whatsapp {
   color: #FFFAFA;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
-.whatsapp i{
+
+.whatsapp i {
   font-size: 40px;
 }
-.about-us{
+
+.about-us {
   text-align: left;
 }
-.section-title{
+
+.section-title {
   color: #FEF5F5;
   text-align: left;
 }
-.about-us p{
+
+.about-us p {
   color: #897A7A;
 }
-.plans img{
-  width:270px ;
+
+.plans img {
+  width: 270px;
 }
 
-.compare{
+.compare {
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-table {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.compare-titles{
+
+.compare-titles {
   color: #FFFFFF;
   display: flex;
   width: calc(50% + 40px);
   justify-content: space-between;
-  
 }
-.compare-row{
+
+.compare-row {
   border-bottom: 1px solid #595656;
   margin-top: 30px;
   display: flex;
