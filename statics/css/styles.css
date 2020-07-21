@@ -4,6 +4,7 @@ body{
   background: #1A1A1A;
   font-family: 'Mulish', sans-serif;
   font-weight: normal;
+  color: #E1D0D0;
 }
 h2{
   margin: 0;
@@ -29,10 +30,10 @@ color:#897A7A;
 
 
 .whatsapp{
-  color: #FFFAFA;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+  color: #70D958;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 .whatsapp i{
   font-size: 40px;
@@ -71,4 +72,38 @@ color:#897A7A;
   color: #A8A8A8;
   padding: 0 20px;
   width: 50%;
+}
+.feature{
+  padding: 50px 0;
+}
+.feature-item img{
+  width: 100px;
+}
+.pay-method-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 29px;
+  padding: 0 40px;
+}
+
+.pay-method-item{
+  width: 80px;
+  border-radius: 100px;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+}
+.pay-method-item img{
+  width: 100%;
+  text-align: center;
+}
+footer{
+  display: flex;
+  background: #333333 ;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
 }
