@@ -78,7 +78,8 @@ p {
 }
 
 .plans img {
-  width: 270px;
+  width: 234px;
+  margin-top: 14px;
 }
 
 .compare {
@@ -93,9 +94,10 @@ p {
 }
 
 .compare-titles {
+  margin-top: 30px;
   color: #FFFFFF;
   display: flex;
-  width: calc(50% + 40px);
+  width: calc(65% + 40px);
   justify-content: space-between;
 }
 
@@ -106,7 +108,15 @@ p {
   justify-content: space-between;
   color: #A8A8A8;
   padding: 0 20px;
-  width: 50%;
+  width: 65%;
+}
+
+.compare-row p {
+  font-size: 11px;
+}
+
+.price-fourScn{
+  color: #F4364D;
 }
 
 .feature {
