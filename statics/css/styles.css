@@ -1,4 +1,4 @@
-body{
+body {
   text-align: center;
   margin: 0;
   background: #1A1A1A;
@@ -6,65 +6,100 @@ body{
   font-weight: normal;
   color: #E1D0D0;
 }
-h2{
+
+h2 {
   margin: 0;
-}
-p{
-  margin: 0;
-}
-.menu{
-  text-align: left;
 }
 
-.hero-title{
+p {
   margin: 0;
-  color:#FFFAFA;
-  font-weight: bold;
 }
-.hero img{
+
+.container {
+  padding: 38px;
+}
+
+.menu {
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.hero-title {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  color: #FFFAFA;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.hero img {
   color: white;
 }
-.hero p{
-color:#897A7A;
+
+.hero p {
+  color: #D6CECE;
 }
 
-
-.whatsapp{
+.whatsapp {
   color: #70D958;
   position: fixed;
   bottom: 30px;
   right: 30px;
 }
-.whatsapp i{
+
+.whatsapp i {
   font-size: 40px;
 }
-.about-us{
+
+.about-us {
   text-align: left;
-}
-.section-title{
-  color: #FEF5F5;
-  text-align: left;
-}
-.about-us p{
-  color: #897A7A;
-}
-.plans img{
-  width:270px ;
 }
 
-.compare{
+.section-title {
+  color: #FEF5F5;
+  text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 78px;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 155%;
+  color: #D6CECE;
+  margin-top: 15px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.plans img {
+  width: 270px;
+}
+
+.compare {
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-table {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.compare-titles{
+
+.compare-titles {
   color: #FFFFFF;
   display: flex;
   width: calc(50% + 40px);
   justify-content: space-between;
-  
 }
-.compare-row{
+
+.compare-row {
   border-bottom: 1px solid #595656;
   margin-top: 30px;
   display: flex;
@@ -73,13 +108,16 @@ color:#897A7A;
   padding: 0 20px;
   width: 50%;
 }
-.feature{
+
+.feature {
   padding: 50px 0;
 }
-.feature-item img{
+
+.feature-item img {
   width: 100px;
 }
-.pay-method-list{
+
+.pay-method-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -89,20 +127,22 @@ color:#897A7A;
   padding: 0 40px;
 }
 
-.pay-method-item{
+.pay-method-item {
   width: 80px;
   border-radius: 100px;
   overflow: hidden;
   justify-items: center;
   align-items: center;
 }
-.pay-method-item img{
+
+.pay-method-item img {
   width: 100%;
   text-align: center;
 }
-footer{
+
+footer {
   display: flex;
-  background: #333333 ;
+  background: #333333;
   height: 150px;
   align-items: center;
   justify-content: center;
