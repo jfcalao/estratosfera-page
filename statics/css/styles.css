@@ -1,0 +1,74 @@
+body{
+  text-align: center;
+  margin: 0;
+  background: #1A1A1A;
+  font-family: 'Mulish', sans-serif;
+  font-weight: normal;
+}
+h2{
+  margin: 0;
+}
+p{
+  margin: 0;
+}
+.menu{
+  text-align: left;
+}
+
+.hero-title{
+  margin: 0;
+  color:#FFFAFA;
+  font-weight: bold;
+}
+.hero img{
+  color: white;
+}
+.hero p{
+color:#897A7A;
+}
+
+
+.whatsapp{
+  color: #FFFAFA;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.whatsapp i{
+  font-size: 40px;
+}
+.about-us{
+  text-align: left;
+}
+.section-title{
+  color: #FEF5F5;
+  text-align: left;
+}
+.about-us p{
+  color: #897A7A;
+}
+.plans img{
+  width:270px ;
+}
+
+.compare{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compare-titles{
+  color: #FFFFFF;
+  display: flex;
+  width: calc(50% + 40px);
+  justify-content: space-between;
+  
+}
+.compare-row{
+  border-bottom: 1px solid #595656;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #A8A8A8;
+  padding: 0 20px;
+  width: 50%;
+}
