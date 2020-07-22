@@ -18,13 +18,54 @@ p {
 .container {
   padding: 38px;
 }
-
-.menu {
+section{
+  padding-top: 78px;
+}
+.burger-button  {
+  position: fixed;
+  z-index: 3;
   text-align: left;
-  padding-left: 24px;
-  padding-top: 24px;
+  left: 24px;
+  top: 24px;
+}
+.hide-icon{
+  display: none;
 }
 
+.menu{
+  text-align: left;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: -50%;
+  width: 50%;
+  transition: .3s;
+  z-index: 2;
+}
+.menu.is-active{
+  left:0;
+  background-color: #333;
+}
+.opaco{
+  opacity: .4;
+}
+.menu > ul{
+  margin-top: 100px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+.hero{
+  padding: 0;
+  margin-top: 30px;
+}
 .hero-title {
   margin-top: 5px;
   margin-bottom: 7px;
@@ -50,6 +91,7 @@ p {
 
 .whatsapp i {
   font-size: 40px;
+  color: #70D958;
 }
 
 .about-us {
@@ -62,7 +104,6 @@ p {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 78px;
 }
 
 .about-us p {
@@ -125,7 +166,7 @@ p {
 }
 
 .feature {
-  padding: 50px 0 0 0;
+  padding-top: 50px;
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -133,10 +174,16 @@ p {
 
 .feature-item {
   margin-bottom: 30px;
+
 }
 
 .feature-item img {
   width: 100px;
+  margin-bottom: 8px;
+}
+
+.pay-method > h2{
+  margin-bottom: 30px;
 }
 
 .feature-item-name {
