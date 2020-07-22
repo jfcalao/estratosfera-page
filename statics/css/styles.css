@@ -243,6 +243,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .plans-images{
+    display: flex;
+    justify-content: space-evenly;
+  }
   .feature {
     flex-direction: row;
   }
@@ -296,10 +300,7 @@ footer {
   .menu li{
     padding: 0 20px;
   }
-  .plans-images{
-    display: flex;
-    justify-content: space-evenly;
-  }
+  
   .plans img{
     width: 330px;
   }
