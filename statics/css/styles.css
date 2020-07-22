@@ -243,10 +243,51 @@ section {
 
 footer {
   display: flex;
+  flex-direction: column;
   background: #333333;
-  height: 150px;
-  align-items: center;
+  height: 250px;
+  align-items: flex-start;
   justify-content: center;
+}
+
+.brand-footer {
+  padding-left: 38px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#brand-img-footer {
+  width: 80px;
+  margin-left: 0;
+}
+
+#brand-footer-text {
+  text-align: left;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.brand-footer p {
+  font-weight: lighter;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 32px;
+  margin-left: 25px;
+  color: #F9E1E1;
+}
+
+.made-footer {
+  margin-bottom: 0;
+  background-color: #EFCCCC;
+  color: #1A1A1A;
 }
 
 @media screen and (min-width: 768px) {
