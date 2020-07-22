@@ -18,38 +18,44 @@ p {
 .container {
   padding: 38px;
 }
-section{
+
+section {
   padding-top: 78px;
 }
-.burger-button  {
+
+.burger-button {
   position: fixed;
   z-index: 3;
   text-align: left;
   left: 24px;
   top: 24px;
 }
-.hide-icon{
+
+.hide-icon {
   display: none;
 }
 
-.menu{
+.menu {
   text-align: left;
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
   left: -50%;
   width: 50%;
   transition: .3s;
   z-index: 2;
 }
-.menu.is-active{
-  left:0;
+
+.menu.is-active {
+  left: 0;
   background-color: #333;
 }
-.opaco{
+
+.opaco {
   opacity: .4;
 }
-.menu > ul{
+
+.menu>ul {
   margin-top: 100px;
   height: 180px;
   display: flex;
@@ -58,14 +64,20 @@ section{
   justify-content: space-between;
   padding-left: 20px;
 }
-.menu a{
+
+.menu a {
   color: white;
   text-decoration: none;
 }
-.hero{
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
   margin-top: 30px;
 }
+
 .hero-title {
   margin-top: 5px;
   margin-bottom: 7px;
@@ -76,10 +88,19 @@ section{
 
 .hero img {
   color: white;
+  width: 170px;
 }
 
 .hero p {
   color: #D6CECE;
+}
+
+.brand-img {
+  flex: 1;
+}
+
+.brand-text {
+  flex: 1;
 }
 
 .whatsapp {
@@ -174,7 +195,6 @@ section{
 
 .feature-item {
   margin-bottom: 30px;
-
 }
 
 .feature-item img {
@@ -182,7 +202,7 @@ section{
   margin-bottom: 8px;
 }
 
-.pay-method > h2{
+.pay-method>h2 {
   margin-bottom: 30px;
 }
 
@@ -229,20 +249,36 @@ footer {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .feature {
     flex-direction: row;
   }
-  .about-us p{
-    font-size: 1.5em;
+  .about-us p {
+    font-size: 1.2em;
   }
   .pay-method-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
 }
-@media screen and (min-width: 1024px){
 
-
-
+@media screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero-title {
+    font-size: 4em;
+  }
+  .hero p {
+    font-size: 1.2em;
+  }
+  .hero img {
+    position: relative;
+    width: 226px;
+    left: 50%;
+  }
+  .brand-text {
+    position: relative;
+    left: -50%;
+  }
 }
