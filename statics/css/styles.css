@@ -42,7 +42,7 @@ p {
 }
 
 .whatsapp {
-  color: #70D958;
+  color: #F4364D;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -115,16 +115,40 @@ p {
   font-size: 11px;
 }
 
-.price-fourScn{
+.price {
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+.price-fourScn {
   color: #F4364D;
 }
 
 .feature {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-item {
+  margin-bottom: 30px;
 }
 
 .feature-item img {
   width: 100px;
+}
+
+.feature-item-name {
+  font-weight: bold;
+}
+
+.feature-item-text {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .pay-method-list {
