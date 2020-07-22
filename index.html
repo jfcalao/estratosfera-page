@@ -12,9 +12,29 @@
 </head>
 
 <body>
-  <div class="menu">
-    <img width="25" src='./statics/images/menu-icon.svg' />
+  <div class="burger-button hide-icon">
+    <img width="25" src='./statics/images/close.svg' />
   </div>
+  <div class="burger-button">
+    <img width="25" src='./statics/images/menu-icon.svg' />
+
+  </div>
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="#plans">Planes</a>
+      </li>
+      <li>
+        <a href="#pay-method">Metodos de pago</a>
+      </li>
+      <li>
+        <a href="#compare">Compara nuestros precios</a>
+      </li>
+      <li>
+        <a href="#about-u">Acerca de nosotros</a>
+      </li>
+    </ul>
+  </nav>
   <div class="container">
     <section class="hero">
       <img width="170" height="170" src='./statics/images/innovation.svg' alt="rocket-icon" />
@@ -22,7 +42,7 @@
       <p>El cine a tu casa, sencillo y sin</p>
       <p>complicaciones...</p>
     </section>
-    <section class="about-us">
+    <section id="about-u" class="about-us">
       <h2 class="section-title">¿Quienes somos?</h2>
       <div class="about-text">
         <p>
@@ -44,14 +64,14 @@
           y lo entregamos.</p>
       </div>
     </section>
-    <section class="plans">
+    <section id="plans" class="plans">
       <h2 class="section-title">Planes y Promociones</h2>
       <div class="plans-images">
         <img src="./statics/images/plan1.jpeg" alt="plan-image">
         <img src="./statics/images/plan2.jpeg" alt="plan-image">
       </div>
     </section>
-    <section class="compare">
+    <section id="compare" class="compare">
       <h2 class="section-title">Comparativa de precios</h2>
       <div class="compare-table">
         <div class="compare-titles">
@@ -84,16 +104,17 @@
       </div>
       <div class="feature-item">
         <img src="./statics/images/safety.svg" alt="">
-        <p class="feature-item-name">Servicio personalizado</p>
+        <p class="feature-item-name">Legal y Original</p>
         <p class="feature-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum</p>
       </div>
       <div class="feature-item">
         <img src="./statics/images/medal.svg" alt="">
-        <p class="feature-item-name">Servicio personalizado</p>
+        <p class="feature-item-name">Garantia</p>
         <p class="feature-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum</p>
+
       </div>
     </section>
-    <section class="pay-method">
+    <section id="pay-method" class="pay-method">
       <h2 class="section-title">Metodos de pago</h2>
       <div class="pay-method-list">
         <div class="pay-method-item"><img src="./statics/images/Metodos de pago/1.png" alt=""></div>
@@ -107,11 +128,16 @@
     </div>
   </div>
   <footer>
-    <p>Made with <\3 by jfcalao and manliot</p>
+    <p>Made with ❤️ by jfcalao and manliot</p>
   </footer>
   <div class="whatsapp">
-    <i class="fab fa-whatsapp"></i>
+
+    <a target="_blank" href="https://wa.me/573012570157">
+      <!-- https://web.whatsapp.com/send?phone=573012570157&amp;text&amp;source&amp;data&amp;app_absent -->
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
+  <script src="./src/index.js"></script>
 </body>
 
 </html>
