@@ -83,6 +83,7 @@ section{
 }
 
 .whatsapp {
+  color: #F4364D;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -155,12 +156,25 @@ section{
   font-size: 11px;
 }
 
-.price-fourScn{
+.price {
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+.price-fourScn {
   color: #F4364D;
 }
 
 .feature {
   padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-item {
+  margin-bottom: 30px;
+
 }
 
 .feature-item img {
@@ -170,6 +184,18 @@ section{
 
 .pay-method > h2{
   margin-bottom: 30px;
+}
+
+.feature-item-name {
+  font-weight: bold;
+}
+
+.feature-item-text {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .pay-method-list {
