@@ -16,10 +16,18 @@ p {
 }
 
 .container {
-  padding: 38px;
+  max-width: 1000px;
+  display: inherit;
+  justify-content: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  height: inherit;
+  margin: 0 auto;
+  flex: 1;
 }
 
 section {
+  padding: 0 50px;
   padding-top: 78px;
 }
 
@@ -44,18 +52,18 @@ section {
   width: 50%;
   transition: .3s;
   z-index: 2;
+  background-color: #333;
 }
 
 .menu.is-active {
   left: 0;
-  background-color: #333;
 }
 
 .opaco {
   opacity: .4;
 }
 
-.menu>ul {
+.menu ul {
   margin-top: 100px;
   height: 180px;
   display: flex;
@@ -95,14 +103,6 @@ section {
   color: #D6CECE;
 }
 
-.brand-img {
-  flex: 1;
-}
-
-.brand-text {
-  flex: 1;
-}
-
 .whatsapp {
   color: #F4364D;
   position: fixed;
@@ -121,6 +121,7 @@ section {
 
 .section-title {
   color: #FEF5F5;
+  margin-bottom: 30px;
   text-align: left;
   font-weight: 600;
   font-size: 24px;
@@ -142,11 +143,6 @@ section {
 .plans img {
   width: 234px;
   margin-top: 14px;
-}
-
-.compare {
-  display: flex;
-  flex-direction: column;
 }
 
 .compare-table {
@@ -202,9 +198,6 @@ section {
   margin-bottom: 8px;
 }
 
-.pay-method>h2 {
-  margin-bottom: 30px;
-}
 
 .feature-item-name {
   font-weight: bold;
@@ -291,6 +284,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .plans-images{
+    display: flex;
+    justify-content: space-evenly;
+  }
   .feature {
     flex-direction: row;
   }
@@ -304,22 +301,58 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .hero {
-    flex-direction: row;
+  .hero{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .hero > div{
+    max-width: 75vw;
   }
   .hero-title {
     font-size: 4em;
+    padding-bottom: 20px;
+  }
+  .brand-text{
+    text-align: left;
   }
   .hero p {
     font-size: 1.2em;
   }
-  .hero img {
-    position: relative;
-    width: 226px;
-    left: 50%;
+  .hero img{
+    width: 225px;
   }
-  .brand-text {
-    position: relative;
-    left: -50%;
+  .burger-button{
+    display: none;
+  }
+  .menu{
+    position: initial;
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+  }
+  .menu ul{
+    height: 60px;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menu li{
+    padding: 0 20px;
+  }
+  
+  .plans img{
+    width: 330px;
+  }
+  .compare-row h2{
+    font-size: 50px;
+    
+  }
+  .compare-row p{
+    font-size: 16px;
+  }
+  .one-digit{
+    padding-left: 34px;
   }
 }
