@@ -21,13 +21,17 @@ p {
 section{
   padding-top: 78px;
 }
-.burger-button {
+.burger-button  {
   position: fixed;
   z-index: 3;
   text-align: left;
   left: 24px;
   top: 24px;
 }
+.hide-icon{
+  display: none;
+}
+
 .menu{
   text-align: left;
   position: fixed;
@@ -157,10 +161,6 @@ section{
 
 .feature {
   padding-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 50px;
-  gap: 50px;
 }
 
 .feature-item img {
