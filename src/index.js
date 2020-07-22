@@ -27,5 +27,7 @@ hamburgerButton.forEach(element => {
   })
 });
 menuItemList.forEach(element => {
-  element.addEventListener('click', toggleMenu)
+  element.addEventListener('click', ()=>{toggleMenu()
+    toggleOpacity()
+  })
 });
