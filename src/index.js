@@ -1,6 +1,7 @@
 const menu = document.querySelector(".menu")
 const hamburgerButton= document.querySelector('.burger-button')
 const container= document.querySelector('.container')
+const menuItemList= document.querySelectorAll('.menu a')
 const handleClick=()=>{
   toggleMenu()
 }
@@ -14,3 +15,6 @@ const toggleMenu= ()=>{
   }
 }
 hamburgerButton.addEventListener('click', handleClick)
+menuItemList.forEach(element => {
+  element.addEventListener('click', toggleMenu)
+});

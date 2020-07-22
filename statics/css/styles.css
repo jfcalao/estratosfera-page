@@ -18,13 +18,15 @@ p {
 .container {
   padding: 38px;
 }
-
+section{
+  padding-top: 78px;
+}
 .burger-button {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 3;
   text-align: left;
-  padding-left: 24px;
-  padding-top: 24px;
+  left: 24px;
+  top: 24px;
 }
 .menu{
   text-align: left;
@@ -34,26 +36,31 @@ p {
   left: -50%;
   width: 50%;
   transition: .3s;
+  z-index: 2;
 }
 .menu.is-active{
   left:0;
   background-color: #333;
 }
 .opaco{
-  opacity: .1;
+  opacity: .4;
 }
 .menu > ul{
   margin-top: 100px;
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   list-style: none;
+  justify-content: space-between;
   padding-left: 20px;
 }
 .menu a{
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+}
+.hero{
+  padding: 0;
+  margin-top: 30px;
 }
 .hero-title {
   margin-top: 5px;
@@ -92,7 +99,6 @@ p {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 78px;
 }
 
 .about-us p {
@@ -150,7 +156,7 @@ p {
 }
 
 .feature {
-  padding: 50px 0;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 50px;
@@ -163,7 +169,7 @@ p {
 }
 
 .pay-method > h2{
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .pay-method-list {
