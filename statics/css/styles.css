@@ -19,12 +19,42 @@ p {
   padding: 38px;
 }
 
-.menu {
+.burger-button {
+  position: relative;
+  z-index: 2;
   text-align: left;
   padding-left: 24px;
   padding-top: 24px;
 }
-
+.menu{
+  text-align: left;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: -50%;
+  width: 50%;
+  transition: .3s;
+}
+.menu.is-active{
+  left:0;
+  background-color: #333;
+}
+.opaco{
+  opacity: .1;
+}
+.menu > ul{
+  margin-top: 100px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 20px;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+}
 .hero-title {
   margin-top: 5px;
   margin-bottom: 7px;
@@ -42,7 +72,6 @@ p {
 }
 
 .whatsapp {
-  color: #70D958;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -50,6 +79,7 @@ p {
 
 .whatsapp i {
   font-size: 40px;
+  color: #70D958;
 }
 
 .about-us {
@@ -121,10 +151,19 @@ p {
 
 .feature {
   padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+  gap: 50px;
 }
 
 .feature-item img {
   width: 100px;
+  margin-bottom: 8px;
+}
+
+.pay-method > h2{
+  margin: 30px 0;
 }
 
 .pay-method-list {

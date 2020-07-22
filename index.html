@@ -12,9 +12,22 @@
 </head>
 
 <body>
-  <div class="menu">
+  <div class="burger-button">
     <img width="25" src='./statics/images/menu-icon.svg' />
   </div>
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="">Acerca de nosotros</a>
+      </li>
+      <li>
+        <a href="">Planes</a>
+      </li>
+      <li>
+        <a href="">Contacto</a>
+      </li>
+    </ul>
+  </nav>
   <div class="container">
     <section class="hero">
       <img width="170" height="170" src='./statics/images/innovation.svg' alt="rocket-icon" />
@@ -87,7 +100,7 @@
       </div>
       <div class="feature-item">
         <img src="./statics/images/medal.svg" alt="">
-        <p>Servicio personalizado</p>
+        <p class='feature-title'>Servicio personalizado</p>
       </div>
     </section>
     <section class="pay-method">
@@ -104,11 +117,18 @@
     </div>
   </div>
   <footer>
-    <p>Made with <\3 by jfcalao and manliot</p>
+    <p>Made with ❤️ by jfcalao and manliot</p>
   </footer>
   <div class="whatsapp">
-    <i class="fab fa-whatsapp"></i>
+    
+    <a 
+    target="_blank"
+    href="https://wa.me/573012570157">
+    <!-- https://web.whatsapp.com/send?phone=573012570157&amp;text&amp;source&amp;data&amp;app_absent -->
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
+  <script src="./src/index.js"></script>
 </body>
 
 </html>
