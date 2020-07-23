@@ -104,13 +104,15 @@ section {
 .hero p {
   color: #D6CECE;
 }
+.brand-text{
+  color: #D6CECE;
+}
 .whatsapp-wraper{
   padding-bottom: 78px;
   position: relative;
 }
 
 .whatsapp {
-  color: #F4364D;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -150,7 +152,7 @@ section {
   width: 140px;
   font-weight: 650;
   text-align: left;
-  color: #F4364D;
+  color: #E63E33;
   align-self: center;
 }
 
@@ -166,9 +168,8 @@ section {
   flex-direction: column;
 }
 .plan-category{
+  margin-top: 50px;
   text-align: left;
-}
-.plan-category{
   padding-left: 30px;
 }
 .plan-list{
@@ -177,19 +178,24 @@ section {
   flex-direction: column;
 }
 .plan-item{
+  height: auto;
+  text-align: center;
   border-radius: 10px;
   margin: 16px;
   overflow: hidden;
   color: #333333;
-  background: white;
+  background: #333333;
   box-shadow: 0 2px 9px 0 rgba(0,0,0,.9);
   width: 196px;
 }
 .plan-item-title{
-  background: #F4364D;
-  color: #333333;
-  text-align: center;
+  display: flex;
+  background: #E63E33;
+  color: white;
   width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .plan-item-title h3{
   margin: 0;
@@ -197,20 +203,25 @@ section {
 .plan-item-description{
   box-sizing: initial;
   padding: 16px;
+  color: white;
 
 }
 .plan-item-description> h2{
   font-size: 33px;
 }
 .plan-item-description > ul{
+  color: #D6CECE;
   list-style: none;
   font-size: 16px;
   font-weight: lighter;
   text-align: left;
   padding: 0;
   margin: 0;
+  margin-top: 16px;
 }
-
+.plan-item-description > ul li{
+  margin-bottom: 10px;
+}
 .compare-table {
   display: flex;
   flex-direction: column;
@@ -403,9 +414,12 @@ footer {
 @media screen and (min-width: 768px) {
   .plan-list {
     flex-direction: row;
+    justify-content: center;
   }
   .feature {
     flex-direction: row;
+    margin-top:90px ;
+
   }
   .about-us p {
     font-size: 1.2em;
@@ -462,7 +476,20 @@ footer {
     height: 120px;
   }
 
+  .plan-item{
+    width: 270px;
+  }
+  .plan-item-title{
+    font-size: 24px;
+  }
+  .plan-item-description > h2{
+    font-size: 50px;
 
+  }
+  .plan-item-description > ul{
+    font-size: 20px;
+    font-weight: 300;
+  }
 
   .menu {
     position: initial;
@@ -497,5 +524,8 @@ footer {
   }
   .pay-method-item {
     width: 110px;
+  }
+  .whatsapp i{
+    font-size: 3.7em;
   }
 }
