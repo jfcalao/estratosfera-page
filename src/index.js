@@ -1,11 +1,14 @@
 const menu = document.querySelector(".menu")
 const hamburgerButton = document.querySelectorAll('.burger-button')
 const container = document.querySelector('.opacity-wraper')
+const whatsapp = document.querySelector('.whatsapp')
 const menuItemList = document.querySelectorAll('.menu a')
+const footer=document.getElementById('footer')
+
 const toggleOpacity = () => {
   if (menu.classList.contains('is-active')) {
     container.classList.add('opaco')
-  }else{
+  } else {
     container.classList.remove('opaco')
   }
 }
@@ -22,12 +25,32 @@ const toggleMenu = () => {
 }
 
 hamburgerButton.forEach(element => {
-  element.addEventListener('click', ()=>{toggleMenu()
+  element.addEventListener('click', () => {
+    toggleMenu()
     toggleOpacity()
   })
 });
 menuItemList.forEach(element => {
-  element.addEventListener('click', ()=>{toggleMenu()
+  element.addEventListener('click', () => {
+    toggleMenu()
     toggleOpacity()
   })
 });
+
+
+function callback(entries, observer){
+  console.log(entries)
+  if (entries[0].isIntersecting) {
+    console.log('is intermadre')
+    whatsapp.style.position="absolute"
+  } else {
+    whatsapp.style.position="fixed"
+
+  }
+}
+const options={
+  rootMargin: '0px 0px 78px 0px'
+}
+
+const observer = new IntersectionObserver(callback, options)
+observer.observe(footer)

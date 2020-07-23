@@ -102,10 +102,13 @@ section {
 .hero p {
   color: #D6CECE;
 }
+.opacity-wraper{
+  position: relative;
+}
 
 .whatsapp {
   color: #F4364D;
-  position: fixed;
+  position: absolute;
   bottom: 30px;
   right: 30px;
 }
@@ -234,7 +237,6 @@ section {
   text-align: center;
 }
 .contact{
-  border: 1px solid red;
 }
 .contact input{
   border-radius: 20px;
