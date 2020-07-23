@@ -253,6 +253,23 @@ section {
   width: 100%;
   text-align: center;
 }
+.contact{
+  border: 1px solid red;
+}
+.contact input{
+  border-radius: 20px;
+  background-image: url('../images/mail.svg');
+  background-position-x: 10px;
+  background-position-y: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  padding: 15px;
+  padding-left: 30px;
+
+  width: 40%;
+}
 
 footer {
   margin-top: 78px;
@@ -262,6 +279,8 @@ footer {
   height: 250px;
   align-items: center;
   justify-content: center;
+  margin-top: 78px;
+
 }
 
 .rocket-footer {
