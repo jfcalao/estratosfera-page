@@ -1,15 +1,19 @@
 const menu = document.querySelector(".menu")
 const hamburgerButton = document.querySelectorAll('.burger-button')
-const container = document.querySelector('.opacity-wraper')
+const container = document.querySelectorAll('.opacity-wraper')
 const whatsapp = document.querySelector('.whatsapp')
 const menuItemList = document.querySelectorAll('.menu a')
 const footer=document.getElementById('footer')
 
 const toggleOpacity = () => {
   if (menu.classList.contains('is-active')) {
-    container.classList.add('opaco')
+    container.forEach(element=>{
+      element.classList.add('opaco')
+    }) 
   } else {
-    container.classList.remove('opaco')
+    container.forEach(element=>{
+      element.classList.remove('opaco')
+    }) 
   }
 }
 const toggleMenu = () => {

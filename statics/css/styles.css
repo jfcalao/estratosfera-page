@@ -35,7 +35,7 @@ section {
   position: fixed;
   z-index: 3;
   text-align: left;
-  left: 24px;
+  left: 16px;
   top: 24px;
 }
 
@@ -102,13 +102,14 @@ section {
 .hero p {
   color: #D6CECE;
 }
-.opacity-wraper{
+.whatsapp-wraper{
+  padding-bottom: 78px;
   position: relative;
 }
 
 .whatsapp {
   color: #F4364D;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   right: 30px;
 }
@@ -274,7 +275,6 @@ section {
 }
 
 footer {
-  margin-top: 78px;
   display: flex;
   flex-direction: column;
   background: #333333;
@@ -297,6 +297,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 #brand-img-footer {
@@ -320,10 +321,12 @@ footer {
   margin-top: 15px;
   padding-right: 38px;
 }
-
-.social-icon {
-  width: 32px;
+.social a{
   margin-left: 25px;
+
+}
+.social-icon {
+  font-size: 32px;
   color: #F9E1E1;
 }
 
@@ -403,7 +406,7 @@ footer {
     justify-content: flex-end;
   }
   .menu li {
-    padding: 0 20px;
+    padding: 0 9px;
   }
   .plans img {
     width: 330px;
