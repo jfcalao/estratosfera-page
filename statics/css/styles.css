@@ -89,7 +89,7 @@ section {
 .hero-title {
   margin-top: 5px;
   margin-bottom: 7px;
-  color: #FFFAFA;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 36px;
 }
@@ -124,7 +124,7 @@ section {
 }
 
 .section-title {
-  color: #FEF5F5;
+  color: #FFFFFF;
   margin-bottom: 30px;
   text-align: left;
   font-weight: 600;
@@ -216,6 +216,7 @@ section {
 
 .feature-item {
   margin-bottom: 30px;
+  color: #FFFFFF;
 }
 
 .feature-item img {
@@ -297,6 +298,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  color: #FFFFFF;
   box-sizing: border-box;
 }
 
@@ -333,7 +335,7 @@ footer {
 .made-footer {
   margin-bottom: 0;
   background-color: #EFCCCC;
-  color: #1A1A1A;
+  color: #000000;
 }
 
 @media screen and (min-width: 768px) {
