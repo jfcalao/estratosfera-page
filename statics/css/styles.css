@@ -165,35 +165,42 @@ section {
   display: flex;
   flex-direction: column;
 }
+.plan-category{
+  text-align: left;
+}
+.plan-category{
+  padding-left: 30px;
+}
 .plan-list{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .plan-item{
   border-radius: 10px;
+  margin: 16px;
   overflow: hidden;
   color: #333333;
   background: white;
   box-shadow: 0 2px 9px 0 rgba(0,0,0,.9);
-  ;
+  width: 196px;
 }
 .plan-item-title{
   background: #F4364D;
-  color: white;
+  color: #333333;
+  text-align: center;
   width: 100%;
 }
 .plan-item-title h3{
   margin: 0;
 }
+.plan-item-description{
+  box-sizing: initial;
+  padding: 16px;
+
+}
 .plan-item-description> h2{
   font-size: 33px;
-}
-.plan-item-description{
-  box-sizing: content-box;
-  padding: 16px;
-  width: 160px;
-
 }
 .plan-item-description > ul{
   list-style: none;
@@ -340,7 +347,7 @@ footer {
 .rocket-footer {
   display: flex;
   flex-direction: column;
-  margin-right: 5px;
+  margin-right: 30px;
 }
 
 .brand-footer {
@@ -386,14 +393,16 @@ footer {
 
 .made-footer {
   margin-bottom: 0;
-  background-color: #EFCCCC;
-  color: #000000;
+  background-color: #242424;
+  color: white;
+}
+.made-footer a{
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
-  .plans-images {
-    display: flex;
-    justify-content: space-evenly;
+  .plan-list {
+    flex-direction: row;
   }
   .feature {
     flex-direction: row;
