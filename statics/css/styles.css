@@ -102,7 +102,8 @@ section {
 .hero p {
   color: #D6CECE;
 }
-.whatsapp-wraper{
+
+.whatsapp-wraper {
   padding-bottom: 78px;
   position: relative;
 }
@@ -258,9 +259,10 @@ section {
   width: 100%;
   text-align: center;
 }
-.contact{
-}
-.contact input{
+
+.contact {}
+
+.contact input {
   border-radius: 20px;
   background-image: url('../images/mail.svg');
   background-position-x: 10px;
@@ -271,7 +273,6 @@ section {
   outline: none;
   padding: 15px;
   padding-left: 30px;
-
   width: 40%;
 }
 
@@ -283,7 +284,6 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 78px;
-
 }
 
 .rocket-footer {
@@ -323,10 +323,11 @@ footer {
   margin-top: 15px;
   padding-right: 38px;
 }
-.social a{
-  margin-left: 25px;
 
+.social a {
+  margin-left: 25px;
 }
+
 .social-icon {
   font-size: 32px;
   color: #F9E1E1;
