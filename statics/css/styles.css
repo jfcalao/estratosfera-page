@@ -54,9 +54,11 @@ section {
   z-index: 2;
   background-color: #333;
 }
-.menu .container{
+
+.menu .container {
   max-width: 1200px;
 }
+
 .menu.is-active {
   left: 0;
 }
@@ -149,7 +151,6 @@ section {
 .netflix-elements p {
   padding-left: 15px;
   width: 140px;
-  /*  font-size: 16px; */
   font-weight: 650;
   text-align: left;
   color: #F4364D;
@@ -168,9 +169,48 @@ section {
   flex-direction: column;
 }
 
-.plans img {
-  width: 234px;
-  margin-top: 14px;
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-item {
+  border-radius: 10px;
+  overflow: hidden;
+  color: #333333;
+  background: white;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, .9);
+  ;
+}
+
+.plan-item-title {
+  background: #F4364D;
+  color: white;
+  width: 100%;
+}
+
+.plan-item-title h3 {
+  margin: 0;
+}
+
+.plan-item-description>h2 {
+  font-size: 33px;
+}
+
+.plan-item-description {
+  box-sizing: content-box;
+  padding: 16px;
+  width: 160px;
+}
+
+.plan-item-description>ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .compare-table {
@@ -264,6 +304,19 @@ section {
 
 .contact {}
 
+.contact .form {
+  text-align: left;
+}
+
+.form button {
+  border-radius: 15px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 75px;
+  height: 35px;
+}
+
 .contact input {
   border-radius: 20px;
   background-image: url('../images/mail.svg');
@@ -287,17 +340,22 @@ footer {
   justify-content: center;
   margin-top: 78px;
 }
-.footer-image-container{
+
+.footer-image-container {
   display: flex;
   align-items: flex-end;
 }
-.footer-image-container>img{
+
+.footer-image-container>img {
   width: 120px;
   height: 98px;
+  padding-bottom: 5px;
 }
+
 .rocket-footer {
   display: flex;
   flex-direction: column;
+  margin-right: 5px;
 }
 
 .brand-footer {
@@ -385,7 +443,6 @@ footer {
     justify-content: space-between;
     padding: 40px;
   }
-  
   .hero-title {
     font-size: 4em;
     padding-bottom: 20px;
@@ -401,6 +458,14 @@ footer {
   }
   .burger-button {
     display: none;
+  }
+  .netflix-elements p {
+    width: 212px;
+    font-size: 26px;
+  }
+  .netflix-elements img {
+    width: 110px;
+    height: 120px;
   }
   .menu {
     position: initial;
