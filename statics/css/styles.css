@@ -4,7 +4,7 @@ body {
   background: #1A1A1A;
   font-family: 'Mulish', sans-serif;
   font-weight: normal;
-  color: #E1D0D0;
+  color: #FFFFFF;
 }
 
 h2 {
@@ -16,7 +16,7 @@ p {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 890px;
   display: inherit;
   justify-content: inherit;
   flex-direction: inherit;
@@ -54,7 +54,9 @@ section {
   z-index: 2;
   background-color: #333;
 }
-
+.menu .container{
+  max-width: 1200px;
+}
 .menu.is-active {
   left: 0;
 }
@@ -285,7 +287,14 @@ footer {
   margin-top: 78px;
 
 }
-
+.footer-image-container{
+  display: flex;
+  align-items: flex-end;
+}
+.footer-image-container>img{
+  width: 120px;
+  height: 98px;
+}
 .rocket-footer {
   display: flex;
   flex-direction: column;
@@ -329,7 +338,7 @@ footer {
 }
 .social-icon {
   font-size: 32px;
-  color: #F9E1E1;
+  color: #FFFFFF;
 }
 
 .made-footer {
@@ -375,9 +384,7 @@ footer {
     justify-content: space-between;
     padding: 40px;
   }
-  .hero>div {
-    max-width: 75vw;
-  }
+  
   .hero-title {
     font-size: 4em;
     padding-bottom: 20px;
