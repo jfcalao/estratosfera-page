@@ -294,10 +294,12 @@ footer {
 .footer-image-container>img{
   width: 120px;
   height: 98px;
+  padding-bottom: 5px;
 }
 .rocket-footer {
   display: flex;
   flex-direction: column;
+  margin-right: 5px;
 }
 
 .brand-footer {
