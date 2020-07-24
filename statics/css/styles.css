@@ -54,9 +54,11 @@ section {
   z-index: 2;
   background-color: #333;
 }
-.menu .container{
+
+.menu .container {
   max-width: 1200px;
 }
+
 .menu.is-active {
   left: 0;
 }
@@ -67,7 +69,7 @@ section {
 
 .menu ul {
   margin-top: 100px;
-  height: 180px;
+  height: 205px;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -85,7 +87,7 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 65px;
 }
 
 .hero-title {
@@ -104,10 +106,12 @@ section {
 .hero p {
   color: #D6CECE;
 }
-.brand-text{
+
+.brand-text {
   color: #D6CECE;
 }
-.whatsapp-wraper{
+
+.whatsapp-wraper {
   padding-bottom: 78px;
   position: relative;
 }
@@ -167,17 +171,20 @@ section {
   display: flex;
   flex-direction: column;
 }
-.plan-category{
+
+.plan-category {
   margin-top: 50px;
   text-align: left;
   padding-left: 30px;
 }
-.plan-list{
+
+.plan-list {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.plan-item{
+
+.plan-item {
   height: auto;
   text-align: center;
   border-radius: 10px;
@@ -185,10 +192,11 @@ section {
   overflow: hidden;
   color: #333333;
   background: #333333;
-  box-shadow: 0 2px 9px 0 rgba(0,0,0,.9);
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, .9);
   width: 196px;
 }
-.plan-item-title{
+
+.plan-item-title {
   display: flex;
   background: #E63E33;
   color: white;
@@ -197,19 +205,22 @@ section {
   align-items: center;
   justify-content: center;
 }
-.plan-item-title h3{
+
+.plan-item-title h3 {
   margin: 0;
 }
-.plan-item-description{
+
+.plan-item-description {
   box-sizing: initial;
   padding: 16px;
   color: white;
-
 }
-.plan-item-description> h2{
+
+.plan-item-description>h2 {
   font-size: 33px;
 }
-.plan-item-description > ul{
+
+.plan-item-description>ul {
   color: #D6CECE;
   list-style: none;
   font-size: 16px;
@@ -219,9 +230,11 @@ section {
   margin: 0;
   margin-top: 16px;
 }
-.plan-item-description > ul li{
+
+.plan-item-description>ul li {
   margin-bottom: 10px;
 }
+
 .compare-table {
   display: flex;
   flex-direction: column;
@@ -243,7 +256,7 @@ section {
   justify-content: space-between;
   color: #A8A8A8;
   padding: 0 20px;
-  width: 65%;
+  width: 70%;
 }
 
 .compare-row p {
@@ -251,7 +264,7 @@ section {
 }
 
 .price {
-  font-size: 24px;
+  font-size: 33px;
   font-weight: 600px;
 }
 
@@ -310,10 +323,14 @@ section {
   width: 100%;
   text-align: center;
 }
-.contact .form{
+
+.contact {}
+
+.contact .form {
   text-align: left;
 }
-.form button{
+
+.form button {
   border-radius: 15px;
   background: transparent;
   border: 1px solid white;
@@ -321,7 +338,8 @@ section {
   width: 75px;
   height: 35px;
 }
-.contact input{
+
+.contact input {
   border-radius: 20px;
   background-image: url('../images/mail.svg');
   background-position-x: 10px;
@@ -332,7 +350,6 @@ section {
   outline: none;
   padding: 15px;
   padding-left: 30px;
-
   width: 40%;
 }
 
@@ -344,17 +361,19 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 78px;
-
 }
-.footer-image-container{
+
+.footer-image-container {
   display: flex;
   align-items: flex-end;
 }
-.footer-image-container>img{
+
+.footer-image-container>img {
   width: 120px;
   height: 98px;
   padding-bottom: 5px;
 }
+
 .rocket-footer {
   display: flex;
   flex-direction: column;
@@ -393,10 +412,11 @@ footer {
   margin-top: 15px;
   padding-right: 38px;
 }
-.social a{
-  margin-left: 25px;
 
+.social a {
+  margin-left: 25px;
 }
+
 .social-icon {
   font-size: 32px;
   color: #FFFFFF;
@@ -407,7 +427,8 @@ footer {
   background-color: #242424;
   color: white;
 }
-.made-footer a{
+
+.made-footer a {
   color: white;
 }
 
@@ -418,8 +439,7 @@ footer {
   }
   .feature {
     flex-direction: row;
-    margin-top:90px ;
-
+    margin-top: 90px;
   }
   .about-us p {
     font-size: 1.2em;
@@ -449,8 +469,8 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 40px;
+    margin-top: 30px;
   }
-  
   .hero-title {
     font-size: 4em;
     padding-bottom: 20px;
@@ -469,28 +489,25 @@ footer {
   }
   .netflix-elements p {
     width: 212px;
-    font-size: 26px ;
+    font-size: 26px;
   }
-  .netflix-elements img{
+  .netflix-elements img {
     width: 110px;
     height: 120px;
   }
-
-  .plan-item{
+  .plan-item {
     width: 270px;
   }
-  .plan-item-title{
+  .plan-item-title {
     font-size: 24px;
   }
-  .plan-item-description > h2{
+  .plan-item-description>h2 {
     font-size: 50px;
-
   }
-  .plan-item-description > ul{
+  .plan-item-description>ul {
     font-size: 20px;
     font-weight: 300;
   }
-
   .menu {
     position: initial;
     width: 100%;
@@ -525,7 +542,7 @@ footer {
   .pay-method-item {
     width: 110px;
   }
-  .whatsapp i{
+  .whatsapp i {
     font-size: 3.7em;
   }
 }
