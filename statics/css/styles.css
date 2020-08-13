@@ -31,6 +31,31 @@ section {
   padding-top: 78px;
 }
 
+.brand-img {
+  transition: 0.5s;
+  animation-name: brand-img-hero;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes brand-img-hero {
+  0% {
+    opacity: 0;
+    left: -300px;
+    bottom: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+.brand-img:hover {
+  transform: scale(1.2)
+}
+
 .burger-button {
   position: fixed;
   z-index: 3;
@@ -88,6 +113,7 @@ section {
   align-items: center;
   padding: 0;
   margin-top: 65px;
+  perspective: 200px;
 }
 
 .hero-title {
@@ -109,6 +135,16 @@ section {
 
 .brand-text {
   color: #D6CECE;
+  animation: brand-text 2s;
+}
+
+@keyframes brand-text {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .whatsapp-wraper {
@@ -120,6 +156,11 @@ section {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  transition-duration: .5s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.5);
 }
 
 .whatsapp i {
@@ -144,6 +185,16 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  animation: netflix-elements 1s;
+}
+
+@keyframes netflix-elements {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .netflix-elements img {
@@ -317,14 +368,17 @@ section {
   overflow: hidden;
   justify-items: center;
   align-items: center;
+  transition-duration: .5s;
+}
+
+.pay-method-item:hover {
+  transform: scale(1.7);
 }
 
 .pay-method-item img {
   width: 100%;
   text-align: center;
 }
-
-.contact {}
 
 .contact .form {
   text-align: left;
@@ -523,6 +577,10 @@ footer {
   }
   .menu li {
     padding: 0 9px;
+    transition: .2s;
+  }
+  .menu li:hover {
+    opacity: .5;
   }
   .plans img {
     width: 330px;
