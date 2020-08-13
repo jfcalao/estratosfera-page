@@ -378,6 +378,7 @@ section {
 .pay-method-item img {
   width: 100%;
   text-align: center;
+  margin-bottom: -4px;
 }
 
 .contact .form {
